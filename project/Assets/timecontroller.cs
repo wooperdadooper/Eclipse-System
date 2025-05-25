@@ -5,7 +5,7 @@ using UnityEngine;
 public class timecontroller : MonoBehaviour
 {
     public float timeStep = 0.5f; // how much to increase/decrease per click
-    public float maxTimeScale = 10f;
+    public float maxTimeScale = 100f;
     public float minTimeScale = 0.1f;
 
     public void SpeedUp()
