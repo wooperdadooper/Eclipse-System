@@ -4,13 +4,13 @@ using UnityEngine;
 public class mooninclinationchanger : MonoBehaviour
 
 {
-    public Transform moonOrbitParent; // The object that defines the Moon's orbital plane
-    private float currentInclination = 5f;
+    public Transform MoonOrbit; // The object that defines the Moon's orbital plane
+    public float currentInclination = 5f;
 
     public void SetInclination(float degrees)
     {
         currentInclination = degrees;
-        moonOrbitParent.localRotation = Quaternion.Euler(currentInclination, 0f, 0f);
+        MoonOrbit.localRotation = Quaternion.Euler(currentInclination, 0f, 0f);
     }
 
     public void IncreaseInclination()
